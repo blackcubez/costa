@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Question Create</title>
+</head>
+
+<body>
+
+<!--{{ detail.test }}<br/>-->
+<!--{{ detail.createDate }}<br/>-->
+
+ <form method="post" action={% url 'create' %}>
+    {% csrf_token %}
+    {{ form }}
+
+<input type="submit" value="send"/>
+ </form>
+
+</body>
+</html>

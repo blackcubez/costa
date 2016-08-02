@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Question List All</title>
+</head>
+
+<body>
+{% for item in question %}
+
+<h2>{{ item.test }}</h2><a href='{% url "detail" id=item.id %}'>click</a><br/>
+
+{% endfor %}
+
+</body>
+</html>
