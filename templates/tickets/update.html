@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ticket Edit</title>
+</head>
+
+
+<body>
+    
+<form method="post" action={% url 'update' id=objID %}>
+{% csrf_token %}
+{{ form.as_ul }}
+<input type="submit" value="Save"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ticket Create</title>
+</head>
+
+<body>
+<form method="post">
+{% csrf_token %}
+{{ form.as_ul }}
+<input type="submit"/>
+</form>
+
+</body>
+</html>

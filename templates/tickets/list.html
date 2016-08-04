@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ticket List All</title>
+</head>
+
+<body>
+{% for ticket in ticketList %}
+{{ ticket.requesterName }}<br/>
+{{ ticket.get_status_display }}<br/>
+{% endfor %}
+
+</body>
+</html>
